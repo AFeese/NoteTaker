@@ -1,13 +1,12 @@
-const dbJSON = require('./db/db.json');
+// const dbJSON = require('./db/db.json');
 
 const fs = require("fs");
 
 //API Routing: 
-// module.exports = function (app) {
 module.exports = (app) => {
     //* GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
     let noteList = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
- 
+
     app.get("/api/notes", (req, res) => {
         return res.json(noteList);
     });
@@ -18,8 +17,9 @@ module.exports = (app) => {
         const lastId = noteList.length ? Math.max(...(noteList.map(note => note.id))) : 0;
         const id = lastId + 1;
 
-        // pushes the id of the note along with the rest of the text/input of the array in the request
+        // pushes the id of the note along with the rest of the text/input of the array in the request.body
         noteList.push({ id, ...req.body });
+        //Removes last index
         res.json(noteList.slice(-1));
     });
 
