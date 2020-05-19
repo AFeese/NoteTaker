@@ -3,8 +3,6 @@ const dbJSON = require('./db/db.json');
 const fs = require("fs");
 
 //API Routing: 
-//------------------------------------------------------------
-
 module.exports = function (app) {
     //* GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
     let noteList = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
