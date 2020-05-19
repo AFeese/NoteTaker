@@ -3,11 +3,12 @@ const dbJSON = require('./db/db.json');
 const fs = require("fs");
 
 //API Routing: 
-module.exports = function (app) {
+// module.exports = function (app) {
+module.exports = (app) => {
     //* GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
     let noteList = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
  
-    app.get("/api/notes", function (req, res) {
+    app.get("/api/notes", (req, res) => {
         return res.json(noteList);
     });
 
@@ -23,7 +24,7 @@ module.exports = function (app) {
     });
 
     // * DELETE `/api/notes/:id` -
-    app.delete('/api/notes/:id', function (req, res) {
+    app.delete('/api/notes/:id', (req, res) => {
         //finds note by id, then converts the string into a JSON object with the id parameters of the request made
         let findNote = noteList.find(({ id }) => id === JSON.parse(req.params.id));
 
