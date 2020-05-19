@@ -9,7 +9,7 @@ module.exports = function (app) {
     
     let noteList = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
     app.get("/api/notes", function (req, res) {
-        return res.JSON(noteList);
+        return res.json(noteList);
     });
 
     //  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
@@ -23,7 +23,7 @@ module.exports = function (app) {
 
     // * DELETE `/api/notes/:id` -
     app.delete('/api/notes/:id', function (req, res) {
-        let findNote = dbJSON.find(({ id }) => id === JSON.parse(req.params.id));
+        let findNote = dbJSON.find(({ id }) => id === json.parse(req.params.id));
         //Delete object matching the index of the note ID
         dbJSON.splice(dbJSON.indexOf(findNote), 1);
         res.end("Note was deleted");
