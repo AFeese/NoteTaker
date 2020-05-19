@@ -14,7 +14,13 @@ module.exports = (app) => {
     //  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
     app.post('/api/notes', (req, res) => {
         // get Id of last note if it exists
-        const lastId = noteList.length ? Math.max(...(noteList.map(note => note.id))) : 0;
+        let lastId;
+        if (noteList.length) {
+            lastId = Math.max(...(noteList.map(note => note.id)));
+        } else {
+            lastId = 0;
+        }
+        // console.log(lastId);
         const id = lastId + 1;
 
         // pushes the id of the note along with the rest of the text/input of the array in the request.body
