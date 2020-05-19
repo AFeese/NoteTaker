@@ -4,6 +4,7 @@ const express = require('express');
 // const fs = require('fs');
 // const dbJSON = require('./db/db.json')
 const PORT = process.env.PORT || 8000;
+const dbJson = require('./db/db.json')
 
 // Sets up the Express App
 const app = express();
