@@ -17,10 +17,12 @@ module.exports = (app) => {
         let lastId;
         if (noteList.length) {
             lastId = Math.max(...(noteList.map(note => note.id)));
+        //Otherwise set to 0
         } else {
             lastId = 0;
         }
         // console.log(lastId);
+        //Starts the id's at 1
         const id = lastId + 1;
 
         // pushes the id of the note along with the rest of the text/input of the array in the request.body
