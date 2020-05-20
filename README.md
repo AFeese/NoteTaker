@@ -30,7 +30,11 @@ Using an express backend, notes entered by user are saved and retrieved from a J
 ## Installation: 
 ### Use the following instruction to install: 
 
-App is deployed to Heroku. If choosing to use from terminal, Serve to run locally: Open terminal and run    ```node server.js```   Then, in browser, search ```localhost:8000``` and enter.
+App is deployed to Heroku. If choosing to use from terminal, open terminal and run    
+```node server.js```   
+
+Then in browser, search 
+```localhost:8000``` 
 
 
 
