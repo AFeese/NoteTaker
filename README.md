@@ -6,20 +6,6 @@
 ## Version:
 1.0.0
 
-
-
-
-## Description of EXPRESS Note Taker:
-Using an express backend, notes entered by user are saved and retrieved from a JSON file.
-
-### User Story: 
-* AS A user, I want to be able to write and save notes 
-* I WANT to be able to delete notes I've written before 
-* SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
-
-
-
 ## Table of Contents:
 * TITLE
 * VERSION
@@ -32,6 +18,13 @@ Using an express backend, notes entered by user are saved and retrieved from a J
 * CONTACT
 
 
+## Description of EXPRESS Note Taker:
+Using an express backend, notes entered by user are saved and retrieved from a JSON file.
+
+### User Story: 
+* AS A user, I want to be able to write and save notes 
+* I WANT to be able to delete notes I've written before 
+* SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 
 ## Installation: 
