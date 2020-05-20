@@ -3,6 +3,8 @@
 
 # EXPRESS Note Taker
 
+![mdGIF](notetaker.gif)
+
 ## Version:
 1.0.0
 
