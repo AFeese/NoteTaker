@@ -52,21 +52,6 @@ EXPRESS Note Taker is intended to be used for anyone who needs a place to organi
 ![License](https://img.shields.io/badge/License-AGPL-blue.svg?style=plastic)
 
 
-
-
-## Contributing: 
-AFeese
-
-
-
-
-
-## Tests: 
-```None```
-
-
-
-
 ### Questions? Contact:
-AFeese
+AFeese, ashleyfeese@outlook.com
 
