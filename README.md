@@ -32,7 +32,8 @@ Using an express backend, notes entered by user are saved and retrieved from a J
 ## Installation: 
 ### Use the following instruction to install: 
 
-App is deployed to Heroku. If choosing to use from terminal, open terminal and run    
+App is deployed to Heroku here: https://afeese-note-taker.herokuapp.com/. 
+If choosing to use from terminal, open terminal and run    
 ```node server.js```   
 
 Then in browser, search 
